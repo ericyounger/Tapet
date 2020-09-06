@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,+DACF,CAEA,KACE,yEAEF","file":"main.cc7f763e.chunk.css","sourcesContent":["body{\n  background-image: url(\"assets/tapestry.jpg\");\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\n    monospace;\n}\n\n"]}
