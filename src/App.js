@@ -16,33 +16,23 @@ function App() {
     const [wallWidth, setWallWidth] = useState("");
     const [rapport, setRapport] = useState("");
 
-    useEffect(() => { console.log(rapport)}, [rollWidth, rollLength, wallHeight, wallWidth, rapport])
-    function kalkuler(){
-        console.log(rollLength, rollWidth, wallWidth, wallHeight);
-
+    function CalculateRollsNeeded(){
 
         let widthNeed = parseFloat(wallWidth) / parseFloat(rollWidth);
-
         let heightRequirement = parseFloat(wallHeight) + parseFloat(rapport)/100;
-
         let lengthFromEachRoll = parseFloat(rollLength) / heightRequirement;
-        let i = 1;
 
-        console.log(widthNeed);
-        console.log(lengthFromEachRoll);
+        let rollsNeeded = Math.ceil(widthNeed/lengthFromEachRoll);
 
-        while(widthNeed>lengthFromEachRoll*i){
-            i++
+        let rest = Math.abs(widthNeed - lengthFromEachRoll*rollsNeeded);
+
+        if(isNaN(rest) || isNaN(rollsNeeded)){
+            alert("Gikk ikke an å beregne, sjekk om du har skrevet inn tallene rett.")
+        } else {
+            alert(`Du trenger ${rollsNeeded} ruller, og har en rest på ${rest.toFixed(2)}m`)
         }
 
-        let rest = Math.abs(widthNeed - lengthFromEachRoll*i);
 
-        alert(`Du trenger ${i} ruller, og har en rest på ${rest.toFixed(2)}m`)
-
-
-        //Check for errors on input
-        //calculate
-        //show result and difference.
     }
   return (
 <div className="container">
@@ -87,7 +77,7 @@ function App() {
                 </div>
 
             </div>
-            <button className="btn waves-light" onClick={kalkuler}>Kalkuler
+            <button className="btn waves-light" onClick={CalculateRollsNeeded}>Kalkuler
                 <i className="material-icons right">calculate</i>
             </button>
     </div>
