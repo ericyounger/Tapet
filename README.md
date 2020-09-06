@@ -1,2 +1,3 @@
-Simple Tapestry calculator i made for my girlfriend. 
+Very simple tapestry calculator i made for my girlfriend. 
 
+Deployed here https://ericyounger.github.io/Tapet/
