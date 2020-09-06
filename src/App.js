@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import M from 'materialize-css'
@@ -21,7 +20,7 @@ function App() {
     function kalkuler(){
         console.log(rollLength, rollWidth, wallWidth, wallHeight);
 
-        //Check for errors on input
+
         let widthNeed = parseFloat(wallWidth) / parseFloat(rollWidth);
 
         let heightRequirement = parseFloat(wallHeight) + parseFloat(rapport)/100;
@@ -41,9 +40,8 @@ function App() {
         alert(`Du trenger ${i} ruller, og har en rest på ${rest.toFixed(2)}m`)
 
 
-
+        //Check for errors on input
         //calculate
-
         //show result and difference.
     }
   return (
