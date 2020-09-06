@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b012df55e39c9833d3d6fdf5fdf7b98f",
+    "revision": "5dfc5ed4eaf5ef095a2ceef0fd435b46",
     "url": "/Tapet/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tapet/static/css/2.9a9a1f6f.chunk.css"
   },
   {
-    "revision": "7949258646cc36d19e22",
+    "revision": "f14592d5ce57c0298cdd",
     "url": "/Tapet/static/css/main.cc7f763e.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Tapet/static/js/2.dad47215.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7949258646cc36d19e22",
-    "url": "/Tapet/static/js/main.d816b911.chunk.js"
+    "revision": "f14592d5ce57c0298cdd",
+    "url": "/Tapet/static/js/main.b469ed79.chunk.js"
   },
   {
     "revision": "82b4f0434380c3ba2aaf",
